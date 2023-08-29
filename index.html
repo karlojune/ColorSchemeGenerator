@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<title>Color Scheme Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<input
+					type="color"
+					class="select-color"
+					name="color"
+					id="select-color"
+					value="#0987F6"
+				/>
+				<select
+					name="select-scheme"
+					class="select-scheme"
+					id="select-scheme"
+				>
+					<option value="monochrome">Monochrome</option>
+					<option value="monochrome-dark">Monochrome-dark</option>
+					<option value="monochrome-light">Monochrome-light</option>
+					<option value="analogic">Analogic</option>
+					<option value="complement">Complement</option>
+					<option value="analogic-complement">
+						Analogic-Complement
+					</option>
+					<option value="triad">Triad</option>
+					<option value="quad">Quad</option>
+				</select>
+
+				<!-- <input
+					type="number"
+					class="select-number"
+					id="select-number"
+					min="1"
+					max="5"
+					value="3"
+				/> -->
+				<button class="get-color-scheme" id="get-color-scheme">
+					Get color scheme
+				</button>
+			</header>
+
+			<div class="color-scheme-display" id="color-scheme-display"></div>
+		</div>
+
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
